@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AB1A612C292DD3E10015D274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A612B292DD3E10015D274 /* AppDelegate.swift */; };
 		AB1A612E292DD3E10015D274 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A612D292DD3E10015D274 /* SceneDelegate.swift */; };
-		AB1A6130292DD3E10015D274 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A612F292DD3E10015D274 /* ViewController.swift */; };
+		AB1A6130292DD3E10015D274 /* TemperatureConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1A612F292DD3E10015D274 /* TemperatureConverterViewController.swift */; };
 		AB1A6133292DD3E10015D274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1A6131292DD3E10015D274 /* Main.storyboard */; };
 		AB1A6135292DD3E50015D274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1A6134292DD3E50015D274 /* Assets.xcassets */; };
 		AB1A6138292DD3E50015D274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1A6136292DD3E50015D274 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		AB1A6128292DD3E10015D274 /* ConversorDeTemperatura_V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConversorDeTemperatura_V2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1A612B292DD3E10015D274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB1A612D292DD3E10015D274 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB1A612F292DD3E10015D274 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB1A612F292DD3E10015D274 /* TemperatureConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConverterViewController.swift; sourceTree = "<group>"; };
 		AB1A6132292DD3E10015D274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB1A6134292DD3E50015D274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB1A6137292DD3E50015D274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				AB1A612B292DD3E10015D274 /* AppDelegate.swift */,
 				AB1A612D292DD3E10015D274 /* SceneDelegate.swift */,
-				AB1A612F292DD3E10015D274 /* ViewController.swift */,
+				AB1A612F292DD3E10015D274 /* TemperatureConverterViewController.swift */,
 				AB1A6131292DD3E10015D274 /* Main.storyboard */,
 				AB1A6134292DD3E50015D274 /* Assets.xcassets */,
 				AB1A6136292DD3E50015D274 /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB1A6130292DD3E10015D274 /* ViewController.swift in Sources */,
+				AB1A6130292DD3E10015D274 /* TemperatureConverterViewController.swift in Sources */,
 				AB1A612C292DD3E10015D274 /* AppDelegate.swift in Sources */,
 				AB1A612E292DD3E10015D274 /* SceneDelegate.swift in Sources */,
 			);
