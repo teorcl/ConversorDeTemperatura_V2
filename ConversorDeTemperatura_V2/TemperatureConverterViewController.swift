@@ -12,6 +12,8 @@ class TemperatureConverterViewController: UIViewController {
     private struct Const{
         static let offset: Double = 32.0
         static let conversionFactor: Double = 1.8
+        static let celcius = "ºC"
+        static let fahrenheit = "ºF"
     }
     
     // MARK: -Outlets
@@ -33,11 +35,12 @@ class TemperatureConverterViewController: UIViewController {
     
     @IBAction func convertToCelciusButtonPressed(_ sender: Any) {
         convertToCelcius()
-        setUpResultFahrenheitToCelciusLabel(celciusObtained: celciusObtained!)
+        setResultLabel(label: resultFahrenheitToCelciusLabel, result: celciusObtained!, typeOfTemperature: Const.celcius, hidden: false)
     }
     
     private func convertToCelcius(){
-        guard let fahrenheiInTextField = Double(getDataInTextField(dataInTextField: fahrenheitTextField.text)) else { return }
+        let fahrenheiInTextField = getDataInTextField(dataInTextField: fahrenheitTextField.text)
+        guard let fahrenheiInTextField = Double( fahrenheiInTextField ) else { return }
         celciusObtained = getCelcius(fahrenheit: fahrenheiInTextField)
     }
     
@@ -49,7 +52,7 @@ class TemperatureConverterViewController: UIViewController {
     
     @IBAction func convertToFahrenheitButtonPressed(_ sender: Any) {
         convertToFahrenheit()
-        setUpResultCelciusToFahrenheitLabel(fahrenheitObtained: fahrenheitObtained!)
+        setResultLabel(label: resultCelciusToFahrenheitLabel, result: fahrenheitObtained!, typeOfTemperature: Const.fahrenheit, hidden: false)
     }
     
     private func convertToFahrenheit(){
@@ -80,14 +83,9 @@ class TemperatureConverterViewController: UIViewController {
         convertFahrenheitToCelciusButton.layer.cornerRadius = 12
     }
     
-    private func setUpResultCelciusToFahrenheitLabel(fahrenheitObtained: Double){
-        resultCelciusToFahrenheitLabel.isHidden = false
-        resultCelciusToFahrenheitLabel.text = "\(fahrenheitObtained) ºF"
-    }
-    
-    private func setUpResultFahrenheitToCelciusLabel(celciusObtained: Double){
-        resultFahrenheitToCelciusLabel.isHidden = false
-        resultFahrenheitToCelciusLabel.text = "\(celciusObtained) ºC"
+    private func setResultLabel(label: UILabel, result: Double, typeOfTemperature: String,hidden: Bool){
+        label.isHidden = hidden
+        label.text = "\(result) \(typeOfTemperature)"
     }
 
 }
